@@ -1,0 +1,66 @@
+footer {
+  grid-area: footer;
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .social-icon-container {
+      display: grid;
+      grid-template-columns: repeat(3, 56px);
+      margin-bottom: 2rem;
+
+      .social-icon {
+        display: inline-block;
+        text-align: center;
+        & > a {
+          display: inline-block;
+          color: $white;
+          margin-right: 1rem;
+          font-size: 1.5rem;
+
+          a {
+            color: $black;
+
+            &:hover {
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
+
+    .section-one,
+    .section-two {
+      font-size: 0.75rem;
+      color: whitesmoke;
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+
+      p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+
+    .section-two {
+      & > p > a {
+        display: inline-block;
+        color: whitesmoke;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    // Styles for phone view
+    @media (max-width: 480px) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

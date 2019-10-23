@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./components/Layout";
+@import "./components/Header";
+@import "./components/Footer";
+@import "./components/Countdown";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+a {
+  display: block;
+}
+
+.hero-logo {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .gatsby-image-wrapper {
+    width: 100%;
+  }
+
+  // Styles for phone view
+  @media (max-width: 435px) {
+    .gatsby-image-wrapper {
+      width: 100%;
+    }
+  }
+}
