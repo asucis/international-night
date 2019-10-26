@@ -1,4 +1,4 @@
-![asucis logo](https://raw.githubusercontent.com/asucis/international-night/master/.github/asucis-logo.png)
+![asucis logo](https://raw.githubusercontent.com/asucis/international-night/master/images/logo.png)
 
 # international-night
 
