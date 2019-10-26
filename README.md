@@ -1,20 +1,18 @@
-![asucis logo](https://raw.githubusercontent.com/asucis/v3/master/.github/asucis-logo.png)
+![asucis logo](https://raw.githubusercontent.com/asucis/international-night/master/.github/asucis-logo.png)
 
-# asucis-v3
+# international-night
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a63a017d-3a06-4fe1-9e26-72fef99b99cb/deploy-status)](https://app.netlify.com/sites/frosty-pasteur-f76607/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ed792f1-3e7f-4723-b11a-3cf8e763aa68/deploy-status)](https://app.netlify.com/sites/admiring-meitner-b5340f/deploys)
 
-Official website for Coalition of International Students at Arizona State University.
-
-Demo available at https://test.asucis.com. Documentation at https://github.com/asucis/v3/docs.
+Official website for International Night, the flagship event for Coalition of International Students at Arizona State University.
 
 ## Development
 
 ℹ️ yarn, gatsby-cli is required to run the project
 
 ```sh
-$ git clone https://github.com/asucis/v3.git
-$ cd v3
+$ git clone https://github.com/asucis/international-night.git
+$ cd international-night
 $ yarn
 $ gatsby develop
 ```
@@ -49,6 +47,6 @@ $ gatsby serve
 
 ## License
 
-The contents of this repository are covered under the [MIT License](https://raw.githubusercontent.com/asucis/v3/master/LICENSE).
+The contents of this repository are covered under the [MIT License](https://github.com/asucis/international-night/blob/master/LICENSE).
 
 Copyright (c) Dick Wyn Yong and the contributors. All rights reserved.

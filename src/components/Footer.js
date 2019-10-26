@@ -64,7 +64,7 @@ const Footer = () => {
             </a>{" "}
             This code is available under the{" "}
             <a
-              href="https://github.com/asucis/v3/blob/dev/LICENSE"
+              href="https://github.com/asucis/international-night/blob/master/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
             >
