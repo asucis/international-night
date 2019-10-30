@@ -58,7 +58,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               dickwyn
-            </a>{" "}
+            </a>
             .
           </p>
         </div>
