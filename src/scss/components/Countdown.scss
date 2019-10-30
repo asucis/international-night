@@ -11,8 +11,6 @@ section.countdown-timer {
       "label" 1fr
       "value" 2fr / 1fr;
 
-    // background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-
     border: 2px whitesmoke ridge;
     width: 86px;
     height: 86px;
@@ -27,7 +25,6 @@ section.countdown-timer {
 
     .label {
       grid-area: label;
-      // background-color: blue;
       justify-self: center;
       text-transform: uppercase;
       font-size: 0.75rem;
@@ -35,7 +32,6 @@ section.countdown-timer {
     }
     .value {
       grid-area: value;
-      // background-color: green;
       font-size: 1.8rem;
       justify-self: center;
     }

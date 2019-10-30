@@ -11,7 +11,7 @@
     grid-area: content;
     display: grid;
 
-    grid-template-rows: 3fr 1fr 2fr;
+    grid-template-rows: 418px 1fr 1fr;
     justify-content: center;
 
     & > h1 {
@@ -22,7 +22,7 @@
 
     .information {
       text-align: center;
-      margin: 30px 0;
+      margin: 0 0 30px;
 
       & > h2 {
         margin: 0 0 15px;
