@@ -13,16 +13,16 @@ const IndexPage = () => {
       </div>
       <Countdown />
       <div className="information">
+        <p className="location">SDFC Fields - ASU Tempe</p>
         <p>Friday, November 15</p>
-        <p>SDFC Fields - ASU Tempe Campus</p>
-        <p>6pm - 10:30pm</p>
+        <p>Activites begin @ 6pm</p>
         <a
           className="button"
           href="https://www.eiseverywhere.com/ereg/newreg.php?eventid=495034"
           target="_blank"
           rel="noopener noreferrer"
         >
-          RSVP a ticket
+          Get Free Tickets
         </a>
       </div>
     </Layout>
