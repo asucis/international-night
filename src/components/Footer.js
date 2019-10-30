@@ -47,10 +47,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="section-one">
-          <p>
-            Arizona State University © Coalition of International Students{" "}
-            {date.getFullYear()}. All rights reserved.
-          </p>
+          <p>© Coalition of International Students {date.getFullYear()}.</p>
         </div>
         <div className="section-two">
           <p>
@@ -62,14 +59,6 @@ const Footer = () => {
             >
               dickwyn
             </a>{" "}
-            This code is available under the{" "}
-            <a
-              href="https://github.com/asucis/international-night/blob/master/LICENSE"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MIT License
-            </a>
             .
           </p>
         </div>
