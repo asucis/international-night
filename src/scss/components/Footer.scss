@@ -1,5 +1,5 @@
 footer {
-  grid-area: footer;
+  padding: 5rem 0 3rem;
 
   .footer-container {
     display: flex;
@@ -18,12 +18,12 @@ footer {
         text-align: center;
         & > a {
           display: inline-block;
-          color: $white;
+          color: $black;
           margin-right: 1rem;
           font-size: 1.5rem;
 
           a {
-            color: $black;
+            color: $accent;
 
             &:hover {
               color: $accent;
@@ -36,7 +36,7 @@ footer {
     .section-one,
     .section-two {
       font-size: 0.9rem;
-      color: whitesmoke;
+      color: $black;
       margin-bottom: 0.5rem;
       font-weight: 300;
 
@@ -49,7 +49,7 @@ footer {
     .section-two {
       & > p > a {
         display: inline-block;
-        color: whitesmoke;
+        color: $black;
 
         &:hover {
           color: $black;
