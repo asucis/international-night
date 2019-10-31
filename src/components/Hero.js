@@ -10,6 +10,7 @@ const Hero = () => {
       <div className="hero-logo">
         <Image />
       </div>
+      <h1>Experience the world at ASU</h1>
       <Countdown />
       <div className="information">
         <div className="section-one">
