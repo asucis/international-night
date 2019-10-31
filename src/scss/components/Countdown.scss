@@ -27,7 +27,7 @@ section.countdown-timer {
       grid-area: label;
       justify-self: center;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 1.08rem;
       font-weight: 100;
     }
 
@@ -35,6 +35,7 @@ section.countdown-timer {
       grid-area: value;
       font-size: 2.5rem;
       justify-self: center;
+      font-weight: 700;
     }
   }
 
