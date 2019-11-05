@@ -21,6 +21,9 @@ const IndexPage = () => {
         <div className="content-container">
           <div className="event-info">
             <h1>International Night</h1>
+            <p className="hashtags">#asucis</p>
+            <p className="hashtags">#asuintlnight</p>
+            <p className="hashtags">#asuglobal</p>
             <h2>
               Join us for a night full of festivities, games, giveaways,
               performances, and everyone&apos;s favorite, food! Immerse yourself

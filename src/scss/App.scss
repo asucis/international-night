@@ -65,7 +65,17 @@ section#content {
       color: $black;
       font-size: 60px;
       font-weight: 400;
-      margin: 0 0 16px;
+      margin: 0 0 10px;
+    }
+
+    & > p.hashtags {
+      display: inline-block;
+      margin: 0 8px 0 0;
+      padding: 2px 8px 4px;
+      font-size: 20px;
+      background-color: $accent-light;
+      color: $white;
+      border-radius: 25px;
     }
 
     & > h2 {
@@ -73,7 +83,7 @@ section#content {
       font-size: 20px;
       font-weight: 300;
       line-height: 1.6;
-      margin: 0 0 8px;
+      margin: 8px 0;
     }
 
     .key-information-container {
