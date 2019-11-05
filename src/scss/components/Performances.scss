@@ -21,7 +21,7 @@ table tr {
 table th,
 table td {
   padding: 0.625em;
-  text-align: center;
+  text-align: left;
 }
 
 table th {
@@ -61,6 +61,7 @@ table th {
     display: block;
     font-size: 0.8em;
     text-align: right;
+    height: 0.8rem;
   }
 
   table td::before {
