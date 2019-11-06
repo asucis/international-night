@@ -3,51 +3,17 @@ backend:
 media_folder: images
 public_folder: images
 collections:
-  - name: site-information
-    label: "Site Information"
+  - name: "sections"
+    label: "Sections"
+    extension: "json"
+    format: "json"
     files:
-      - file: "data/site-information.md"
-        name: "general"
-        label: "General"
+      - file: "data/performances.json"
+        name: "performances"
+        label: "Performances"
+        widget: "list"
         fields:
-          - { label: "Logo", name: "logo", widget: "image" }
-          - { label: "Name", name: "name" }
-          - { label: "Tagline", name: "tagline" }
-          - { label: "Description", name: "description" }
-      - file: "data/social-media-links.md"
-        name: "social"
-        label: "Social Media Links"
-        fields:
-          - { label: "Name", name: "name" }
-          - { label: "Link", name: "link" }
-  - name: "event"
-    label: "Event"
-    folder: "data/event"
-    create: true
-    fields:
-      - { label: "Featured Photo", name: "photo", widget: "image" }
-      - { label: "Name", name: "title" }
-      - { label: "Date", name: "date" }
-      - { label: "Description", name: "description" }
-      - { label: "Link", name: "link" }
-  - name: "team"
-    label: "Team"
-    folder: "data/team"
-    create: true
-    fields:
-      - { label: "Photo", name: "photo", widget: "image" }
-      - { label: "Name", name: "title" }
-      - { label: "Role", name: "role" }
-      - { label: "Email", name: "email" }
-      - { label: "Description", name: "description" }
-      - { label: "Link", name: "link" }
-  - name: "partner-organization"
-    label: "Partner Organization"
-    folder: "data/partner-organization"
-    create: true
-    fields:
-      - { label: "Photo", name: "photo", widget: "image" }
-      - { label: "Name", name: "title" }
-      - { label: "Email", name: "email" }
-      - { label: "Description", name: "description" }
-      - { label: "Link", name: "link" }
+          - { label: "Time", name: "time" }
+          - { label: "Genre", name: "genre" }
+          - { label: "Group Name", name: "group" }
+          - { label: "Performance Name", name: "name" }
