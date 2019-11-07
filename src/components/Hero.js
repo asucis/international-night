@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import Countdown from "./Countdown";
 import Image from "./Image";
-import { tagline } from "../../data/information.json";
+import { tagline, callToAction } from "../../data/information.json";
 
 const Hero = () => {
   return (
@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="section-one">
           <a
             className="button"
-            href="https://www.eiseverywhere.com/ereg/newreg.php?eventid=495034"
+            href={callToAction[0].link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get Free Tickets
+            {callToAction[0].text}
           </a>
         </div>
         <div className="section-two">
