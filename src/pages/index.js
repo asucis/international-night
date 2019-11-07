@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +10,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import SEO from "../components/seo";
 import Performances from "../components/Performances";
+import { title, hashtag, description } from "../../data/introduction.json";
 
 import "../scss/App.scss";
 
@@ -20,18 +22,11 @@ const IndexPage = () => {
       <section id="content">
         <div className="content-container">
           <div className="event-info">
-            <h1>International Night</h1>
-            <p className="hashtags">#asucis</p>
-            <p className="hashtags">#asuintlnight</p>
-            <p className="hashtags">#asuglobal</p>
-            <h2>
-              Join us for a night full of festivities, games, giveaways,
-              performances, and everyone&apos;s favorite, food! Immerse yourself
-              in the unique multicultural society here at ASU, fostered by our
-              community of 10,000+ international students. Best of all, you can
-              experience the beauty of the world first-hand right in your
-              backyard!
-            </h2>
+            <h1>{title}</h1>
+            {hashtag.map(item => (
+              <p className="hashtags">{item.hashtag}</p>
+            ))}
+            <h2>{description}</h2>
             <div className="key-information-container">
               <div className="key-information">
                 <FontAwesomeIcon icon={faMapMarkedAlt} size="6x" />
@@ -72,7 +67,6 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-
           <Performances />
         </div>
       </section>
