@@ -65,10 +65,10 @@ collections:
         label: "Performances"
         fields:
           - label: "Performance Details"
-            name: "performance"
+            name: "performances"
             widget: "list"
             fields:
               - { label: "Time", name: "time" }
+              - { label: "Genre", name: "performer" }
+              - { label: "Country", name: "country", required: false }
               - { label: "Genre", name: "genre", required: false }
-              - { label: "Group Name", name: "group", required: false }
-              - { label: "Performance Name", name: "name", required: false }

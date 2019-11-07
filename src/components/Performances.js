@@ -1,32 +1,32 @@
 import React from "react";
-import { performance } from "../../data/performances.json";
+import { performances } from "../../data/performances.json";
 
 const Performances = () => {
   return (
     <>
       <table>
-        <caption>Performances</caption>
+        <caption>Performances Schedule</caption>
         <thead>
           <tr>
             <th scope="col">Time</th>
+            <th scope="col">Performer</th>
+            <th scope="col">Country</th>
             <th scope="col">Genre</th>
-            <th scope="col">Group</th>
-            <th scope="col">Name</th>
           </tr>
         </thead>
         <tbody>
-          {performance.map(performer => (
+          {performances.map(performance => (
             <tr>
-              <td data-label="Time">{performer.time}</td>
-              <td data-label="Genre">{performer.genre}</td>
-              <td data-label="Group">
-                {performer.genre === "" ? (
-                  <b>{performer.group}</b>
+              <td data-label="Time">{performance.time}</td>
+              <td data-label="Performer">
+                {performance.country === "" || performance.genre === "" ? (
+                  <b>{performance.performer}</b>
                 ) : (
-                  performer.group
+                  performance.performer
                 )}
               </td>
-              <td data-label="Name">{performer.name}</td>
+              <td data-label="Country">{performance.country}</td>
+              <td data-label="Genre">{performance.genre}</td>
             </tr>
           ))}
         </tbody>
