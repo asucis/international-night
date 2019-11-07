@@ -1,6 +1,6 @@
 section.hero {
   display: grid;
-  grid-template-rows: 2fr 5rem 150px 1fr;
+  grid-template-rows: 2fr 5rem 2rem 150px 1fr;
   justify-content: center;
   background-image: linear-gradient(to top, #1d87dd 0%, #04223c 100%);
   height: 100%;
@@ -10,6 +10,13 @@ section.hero {
     text-align: center;
     font-family: "Permanent Marker", cursive;
     font-size: 2rem;
+  }
+
+  & > h2 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
   }
 
   .information {
@@ -75,13 +82,15 @@ section.hero {
   }
 
   @media (max-width: 435px) {
-    grid-template-rows: 3fr 3rem 120px 2fr;
+    grid-template-rows: 3fr 3rem 1.2rem 120px 2fr;
 
     & > h1 {
-      color: white;
-      text-align: center;
-      font-family: "Permanent Marker", cursive;
       font-size: 1.28rem;
+    }
+
+    & > h2 {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
     }
   }
 }

@@ -12,6 +12,12 @@ const Hero = () => {
         <Image />
       </div>
       <h1>{tagline}</h1>
+      <h2>
+        <span role="img" aria-labelledby="large dot">
+          🔴
+        </span>{" "}
+        Live video will begin at 6 pm MST.
+      </h2>
       <Countdown />
       <div className="information">
         <div className="section-one">
