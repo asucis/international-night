@@ -8,6 +8,27 @@ collections:
     extension: "json"
     format: "json"
     files:
+      - file: "data/directory.json"
+          name: "directory"
+          label: "Directory"
+          fields:
+            - label: "Booth"
+              name: "booth"
+              widget: "list"
+              fields:
+                - { label: "Location", name: "location" }
+                - { label: "Name", name: "name"  }
+      - file: "data/food.json"
+          name: "food"
+          label: "Food"
+          fields:
+            - label: "Food"
+              name: "food"
+              widget: "list"
+              fields:
+                - { label: "Name", name: "name" }
+                - { label: "Type", name: "type"  }
+                - { label: "Picture", name: "picture", widget: image }
       - file: "data/performances.json"
         name: "performances"
         label: "Performances"
@@ -20,3 +41,5 @@ collections:
               - { label: "Genre", name: "genre", required: false }
               - { label: "Group Name", name: "group", required: false }
               - { label: "Performance Name", name: "name", required: false }
+      
+             
