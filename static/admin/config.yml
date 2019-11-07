@@ -22,7 +22,7 @@ collections:
         name: "food"
         label: "Food"
         fields:
-          - label: "Food"
+          - label: "Food Items"
             name: "food"
             widget: "list"
             fields:
@@ -33,7 +33,7 @@ collections:
         name: "performances"
         label: "Performances"
         fields:
-          - label: "Performance"
+          - label: "Performance Details"
             name: "performance"
             widget: "list"
             fields:
