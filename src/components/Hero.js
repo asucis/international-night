@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import Countdown from "./Countdown";
 import Image from "./Image";
+import { tagline } from "../../data/information.json";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       <div className="hero-logo">
         <Image />
       </div>
-      <h1>Experience the world at ASU</h1>
+      <h1>{tagline}</h1>
       <Countdown />
       <div className="information">
         <div className="section-one">

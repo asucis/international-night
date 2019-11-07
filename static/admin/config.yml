@@ -14,6 +14,11 @@ collections:
         fields:
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Event Date", name: "datetime", widget: "datetime" }
+          - label: "Call to action"
+            name: "callToAction"
+            fields:
+              - { label: "Button text", name: "text" }
+              - { label: "Button link", name: "link" }
       - file: "data/introduction.json"
         name: "introduction"
         label: "Introduction"

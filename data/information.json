@@ -1,4 +1,10 @@
 {
   "tagline": "Experience the world at ASU",
-  "datetime": "2019-11-16T01:00:00.000Z"
+  "datetime": "2019-11-16T01:00:00.000Z",
+  "callToAction": [
+    {
+      "text": "Get Free Tickets",
+      "link": "https://www.eiseverywhere.com/ereg/newreg.php?eventid=495034"
+    }
+  ]
 }

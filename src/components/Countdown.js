@@ -1,9 +1,10 @@
 import React from "react";
 import CountdownNow from "react-countdown-now";
+import { datetime } from "../../data/information.json";
 
 const Countdown = () => (
   <CountdownNow
-    date={1573866000000}
+    date={datetime}
     renderer={({ days, hours, minutes, seconds }) => (
       <section className="countdown-timer">
         <div className="time-container">
