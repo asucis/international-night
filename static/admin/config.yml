@@ -17,6 +17,6 @@ collections:
             widget: "list"
             fields:
               - { label: "Time", name: "time" }
-              - { label: "Genre", name: "genre" }
-              - { label: "Group Name", name: "group" }
+              - { label: "Genre", name: "genre", required: false }
+              - { label: "Group Name", name: "group", required: false }
               - { label: "Performance Name", name: "name" }
