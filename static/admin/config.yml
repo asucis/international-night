@@ -12,10 +12,12 @@ collections:
         name: "information"
         label: "Information"
         fields:
+          - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Event Date", name: "datetime", widget: "datetime" }
           - label: "Call to action"
             name: "callToAction"
+            widget: "list"
             fields:
               - { label: "Button text", name: "text" }
               - { label: "Button link", name: "link" }
