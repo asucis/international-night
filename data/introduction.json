@@ -1,0 +1,32 @@
+{
+  "title": "International Night",
+  "hashtag": [
+    {
+      "hashtag": "#asucis"
+    },
+    {
+      "hashtag": "#asuintlnight"
+    },
+    {
+      "hashtag": "#asuglobal"
+    }
+  ],
+  "description": "Join us for a night full of festivities, games, giveaways, performances, and everyone's favorite, food! Immerse yourself in the unique multicultural society here at ASU, fostered by our community of 10,000+ international students. Best of all, you can experience the beauty of the world first-hand right in your backyard!",
+  "event-details": [
+    {
+      "icon": "faMapMarkedAlt",
+      "description": "SDFC Intramural Fields ASU Tempe Campus",
+      "link": "https://goo.gl/maps/41xVrzBUcq4zoLMv5"
+    },
+    {
+      "icon": "faTicketAlt",
+      "description": "Claim your free tickets",
+      "link": "https://signup.asucis.com/"
+    },
+    {
+      "icon": "faExclamationCircle",
+      "description": "For your safety, this event adheres to the Sun Devil Athletics clear bag policy",
+      "link": "https://thesundevils.com/sports/2018/8/9/clear-bag-policy.aspx"
+    }
+  ]
+}
