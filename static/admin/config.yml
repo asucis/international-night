@@ -19,4 +19,4 @@ collections:
               - { label: "Time", name: "time" }
               - { label: "Genre", name: "genre", required: false }
               - { label: "Group Name", name: "group", required: false }
-              - { label: "Performance Name", name: "name" }
+              - { label: "Performance Name", name: "name", required: false }
