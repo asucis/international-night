@@ -8,6 +8,24 @@ collections:
     extension: "json"
     format: "json"
     files:
+      - file: "data/introduction.json"
+        name: "introduction"
+        label: "Introduction"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Hashtag"
+            name: "hashtag"
+            widget: "list"
+            fields:
+              - { label: "Hashtag", name: "hashtag" }
+          - { label: "Description", name: "description", widget: "string" }
+          - label: "Event Details"
+            name: "event-details"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon" }
+              - { label: "Description", name: "description" }
+              - { label: "Link", name: "link" }
       - file: "data/directory.json"
         name: "directory"
         label: "Directory"
