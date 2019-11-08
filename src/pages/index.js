@@ -6,6 +6,7 @@ import {
   faTicketAlt,
   faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import InstagramEmbed from "react-instagram-embed";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import SEO from "../components/seo";
@@ -65,6 +66,32 @@ const IndexPage = () => {
                   Learn more
                 </a>
               </div>
+            </div>
+            <div className="instagram-post-container">
+              <InstagramEmbed
+                url="https://www.instagram.com/p/B4lXiXHnKUi/"
+                maxWidth={350}
+                hideCaption={false}
+                containerTagName="div"
+                protocol=""
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {}}
+                onAfterRender={() => {}}
+                onFailure={() => {}}
+              />
+              <InstagramEmbed
+                url="https://www.instagram.com/p/B4jJlZxHpnQ/"
+                maxWidth={350}
+                hideCaption={true}
+                containerTagName="div"
+                protocol=""
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {}}
+                onAfterRender={() => {}}
+                onFailure={() => {}}
+              />
             </div>
           </div>
           <Performances />

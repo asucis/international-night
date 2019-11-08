@@ -114,6 +114,16 @@ section#content {
         }
       }
     }
+
+    .instagram-post-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+
+      & > div {
+        justify-self: center;
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -136,6 +146,10 @@ section#content {
 
     .event-info {
       .key-information-container {
+        grid-template-columns: 1fr;
+      }
+
+      .instagram-post-container {
         grid-template-columns: 1fr;
       }
     }
