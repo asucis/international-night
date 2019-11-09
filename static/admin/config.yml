@@ -1,16 +1,18 @@
 backend:
   name: git-gateway
+
 media_folder: images
 public_folder: images
+
 collections:
-  - name: "sections"
-    label: "Sections"
+  - label: "Sections"
+    name: "sections"
     extension: "json"
     format: "json"
     files:
-      - file: "data/information.json"
+      - label: "Information"
         name: "information"
-        label: "Information"
+        file: "data/information.json"
         fields:
           - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Tagline", name: "tagline", widget: "string" }
@@ -21,27 +23,29 @@ collections:
             fields:
               - { label: "Button text", name: "text" }
               - { label: "Button link", name: "link" }
-      - file: "data/introduction.json"
+      - label: "Introduction"
         name: "introduction"
-        label: "Introduction"
+        file: "data/introduction.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - label: "Hashtag"
-            name: "hashtag"
+          - label: "Hashtags"
+            label_singular: "hashtag"
+            name: "hashtags"
             widget: "list"
             fields:
               - { label: "Hashtag", name: "hashtag" }
           - { label: "Description", name: "description", widget: "text" }
           - label: "Event Details"
+            label_singular: "event detail"
             name: "eventDetails"
             widget: "list"
             fields:
               - { label: "Icon", name: "icon" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Link", name: "link" }
-      - file: "data/directory.json"
+      - label: "Directory"
         name: "directory"
-        label: "Directory"
+        file: "data/directory.json"
         fields:
           - label: "Booth"
             name: "booth"
@@ -49,22 +53,24 @@ collections:
             fields:
               - { label: "Location", name: "location" }
               - { label: "Name", name: "name" }
-      - file: "data/food.json"
+      - label: "Food"
         name: "food"
-        label: "Food"
+        file: "data/food.json"
         fields:
           - label: "Food Items"
+            label_singular: "food item"
             name: "food"
             widget: "list"
             fields:
               - { label: "Name", name: "name" }
               - { label: "Type", name: "type" }
               - { label: "Picture", name: "picture", widget: image }
-      - file: "data/performances.json"
+      - label: "Performances"
         name: "performances"
-        label: "Performances"
+        file: "data/performances.json"
         fields:
-          - label: "Performance Details"
+          - label: "Performances"
+            label_singular: "performance"
             name: "performances"
             widget: "list"
             fields:

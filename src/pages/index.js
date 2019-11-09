@@ -11,7 +11,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import SEO from "../components/seo";
 import Performances from "../components/Performances";
-import { title, hashtag, description } from "../../data/introduction.json";
+import { title, hashtags, description } from "../../data/introduction.json";
 
 import "../scss/App.scss";
 
@@ -24,7 +24,7 @@ const IndexPage = () => {
         <div className="content-container">
           <div className="event-info">
             <h1>{title}</h1>
-            {hashtag.map(item => (
+            {hashtags.map(item => (
               <p className="hashtags">{item.hashtag}</p>
             ))}
             <h2>{description}</h2>
