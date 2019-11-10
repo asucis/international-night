@@ -25,7 +25,9 @@ const IndexPage = () => {
           <div className="event-info">
             <h1>{title}</h1>
             {hashtags.map(item => (
-              <p className="hashtags">{item.hashtag}</p>
+              <p key={item.hashtag} className="hashtags">
+                {item.hashtag}
+              </p>
             ))}
             <h2>{description}</h2>
             <div className="key-information-container">

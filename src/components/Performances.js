@@ -16,7 +16,7 @@ const Performances = () => {
         </thead>
         <tbody>
           {performances.map(performance => (
-            <tr>
+            <tr key={performance.time}>
               <td data-label="Time">{performance.time}</td>
               <td data-label="Performer">
                 {performance.country === "" || performance.genre === "" ? (
