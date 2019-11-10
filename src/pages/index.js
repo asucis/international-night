@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { Component } from "react";
 import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,6 +27,21 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
+    console.log(
+      `
+      ##    ####  #    #  ####  #  ####  
+      #  #  #      #    # #    # # #      
+     #    #  ####  #    # #      #  ####  
+     ######      # #    # #      #      # 
+     #    # #    # #    # #    # # #    # 
+     #    #  ####   ####   ####  #  ####                         
+      `
+    );
+
+    console.log(
+      "Looks like you're exploring the code.\n\nIf you are interested in contributing or forking this project, please head over to our github repository at https://github.com/asucis/international-night\n\nthanks,\ndickwyn\nhttps://www.dickwyn.xyz"
+    );
+
     const timeNowInUtc = moment.utc().format("DD/MM/YYYY HH:mm:ss");
     const eventTimeInUtc = moment(eventTimestamp)
       .utc()
@@ -39,7 +55,7 @@ class IndexPage extends Component {
       )
       .asHours();
 
-    if (timeLeftToEvent < 8) {
+    if (timeLeftToEvent < 130) {
       this.setState(prevState => ({
         isEventToday: !prevState.isEventToday,
       }));
