@@ -16,7 +16,7 @@ collections:
         fields:
           - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Event Date", name: "datetime", widget: "datetime" }
+          - { label: "Event Date", name: "eventTimestamp", widget: "datetime" }
           - label: "Call to action"
             name: "callToAction"
             widget: "list"
