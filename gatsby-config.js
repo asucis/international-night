@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ASU Coalition of International Students`,
-    description: `CIS is a student led organization that acts as a bridge to reflect the needs of international students to university administration. We aim to enhance international student experience, promote cultural diversity and inclusivity in ASU through events and service.`,
+    title: `International Night 2019`,
+    description: `International Night is the Coalition of International Students' flagship event celebrating cultural diversity of the 10,000+ international students at ASU.`,
     author: `@dickwyn`,
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/images`,
+        path: `${__dirname}/static/images`,
       },
     },
     `gatsby-transformer-remark`,
@@ -35,13 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ASU Coalition of International Students`,
-        short_name: `ASUCIS`,
+        name: `International Night 2019`,
+        short_name: `International Night`,
         start_url: `/`,
         background_color: `#FFF`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: `images/asucis-icon.png`,
+        icon: `static/images/asucis-icon.png`,
       },
     },
     {
