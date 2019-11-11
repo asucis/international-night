@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import React, { Component } from "react";
 import moment from "moment";
+import figlet from "figlet";
+import ansiShadow from "figlet/importable-fonts/ANSI Shadow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkedAlt,
@@ -18,6 +20,8 @@ import { title, hashtags, description } from "../../data/introduction.json";
 
 import "../scss/App.scss";
 
+figlet.parseFont("ansiShadow", ansiShadow);
+
 class IndexPage extends Component {
   constructor(props) {
     super(props);
@@ -27,19 +31,21 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-    console.log(
-      `
-  ##    ####  #    #  ####  #  ####  
-#   #  #      #    # #    # # #      
-#    #  ####  #    # #      #  ####  
-######      # #    # #      #      # 
-#    # #    # #    # #    # # #    # 
-#    #  ####   ####   ####  #  ####                         
-      `
-    );
-
-    console.log(
-      "Looks like you're exploring the code.\n\nIf you are interested in contributing or forking this project, please head over to our github repository at https://github.com/asucis/international-night\n\nthanks,\ndickwyn\nhttps://www.dickwyn.xyz"
+    figlet.text(
+      "ASUCIS",
+      {
+        font: "ansiShadow",
+      },
+      (err, data) => {
+        if (err) {
+          console.log("Something went wrong...");
+          console.dir(err);
+          return;
+        }
+        console.log(
+          `\n${data}\nLooks like you're exploring the code.\n\nThis project is open source, you can head over to our github repository at https://github.com/asucis/international-night and check out the code yourself. \n\nthanks ~ dickwyn https://www.dickwyn.xyz\n\n`
+        );
+      }
     );
 
     const timeNowInUtc = moment.utc().format("DD/MM/YYYY HH:mm:ss");
