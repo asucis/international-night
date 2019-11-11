@@ -10,7 +10,7 @@ collections:
     extension: "json"
     format: "json"
     files:
-      - label: "Information"
+      - label: "Event Information"
         name: "information"
         file: "data/information.json"
         fields:
