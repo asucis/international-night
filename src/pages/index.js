@@ -54,6 +54,8 @@ class IndexPage extends Component {
       )
       .asHours();
 
+    console.log(`${timeLeftToEvent} hours left till International Night 2019`);
+
     if (timeLeftToEvent < 8) {
       this.setState(prevState => ({
         isEventToday: !prevState.isEventToday,
