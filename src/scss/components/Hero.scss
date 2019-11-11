@@ -5,6 +5,16 @@ section.hero {
   background-image: linear-gradient(to top, #1d87dd 0%, #04223c 100%);
   height: 100%;
 
+  .hero-logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    .gatsby-image-wrapper {
+      width: 100%;
+    }
+  }
+
   & > h1 {
     color: white;
     text-align: center;

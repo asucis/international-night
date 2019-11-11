@@ -46,7 +46,6 @@ class IndexPage extends Component {
     const eventTimeInUtc = moment(eventTimestamp)
       .utc()
       .format("DD/MM/YYYY HH:mm:ss");
-
     const timeLeftToEvent = moment
       .duration(
         moment(eventTimeInUtc, "DD/MM/YYYY HH:mm:ss").diff(
@@ -55,7 +54,7 @@ class IndexPage extends Component {
       )
       .asHours();
 
-    if (timeLeftToEvent < 130) {
+    if (timeLeftToEvent < 8) {
       this.setState(prevState => ({
         isEventToday: !prevState.isEventToday,
       }));
@@ -117,32 +116,36 @@ class IndexPage extends Component {
                   </a>
                 </div>
               </div>
-              <div className="instagram-post-container">
-                <InstagramEmbed
-                  url="https://www.instagram.com/p/B4lXiXHnKUi/"
-                  maxWidth={350}
-                  hideCaption={false}
-                  containerTagName="div"
-                  protocol=""
-                  injectScript
-                  onLoading={() => {}}
-                  onSuccess={() => {}}
-                  onAfterRender={() => {}}
-                  onFailure={() => {}}
-                />
-                <InstagramEmbed
-                  url="https://www.instagram.com/p/B4jJlZxHpnQ/"
-                  maxWidth={350}
-                  hideCaption
-                  containerTagName="div"
-                  protocol=""
-                  injectScript
-                  onLoading={() => {}}
-                  onSuccess={() => {}}
-                  onAfterRender={() => {}}
-                  onFailure={() => {}}
-                />
-              </div>
+              {isEventToday ? (
+                ""
+              ) : (
+                <div className="instagram-post-container">
+                  <InstagramEmbed
+                    url="https://www.instagram.com/p/B4lXiXHnKUi/"
+                    maxWidth={350}
+                    hideCaption={false}
+                    containerTagName="div"
+                    protocol=""
+                    injectScript
+                    onLoading={() => {}}
+                    onSuccess={() => {}}
+                    onAfterRender={() => {}}
+                    onFailure={() => {}}
+                  />
+                  <InstagramEmbed
+                    url="https://www.instagram.com/p/B4jJlZxHpnQ/"
+                    maxWidth={350}
+                    hideCaption
+                    containerTagName="div"
+                    protocol=""
+                    injectScript
+                    onLoading={() => {}}
+                    onSuccess={() => {}}
+                    onAfterRender={() => {}}
+                    onFailure={() => {}}
+                  />
+                </div>
+              )}
             </div>
             <Performances />
           </div>

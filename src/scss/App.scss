@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./components/Hero";
+@import "./components/Livestream";
 @import "./components/Layout";
 @import "./components/Header";
 @import "./components/Footer";
@@ -35,23 +36,6 @@ body {
 
 a {
   display: block;
-}
-
-.hero-logo {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-
-  .gatsby-image-wrapper {
-    width: 100%;
-  }
-
-  // Styles for phone view
-  @media (max-width: 435px) {
-    .gatsby-image-wrapper {
-      width: 100%;
-    }
-  }
 }
 
 section#content {
