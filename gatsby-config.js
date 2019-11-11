@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `International Night 2019`,
+        name: `International Night`,
         short_name: `International Night`,
         start_url: `/`,
         background_color: `#FFF`,

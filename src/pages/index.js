@@ -73,7 +73,7 @@ class IndexPage extends Component {
     const { isEventToday } = this.state;
     return (
       <>
-        <SEO title="International Night 2019" />
+        <SEO title="International Night" />
         {isEventToday ? <Livestream /> : <Hero />}
         <section id="content">
           <div className="content-container">
