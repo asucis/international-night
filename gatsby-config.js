@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `International Night 2019`,
+    title: `International Night`,
     description: `International Night is the Coalition of International Students' flagship event celebrating cultural diversity of the 10,000+ international students at ASU.`,
     image: "/images/international-night-hero.jpg",
     url: "https://internationalnight.asucis.com",
