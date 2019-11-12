@@ -5,6 +5,12 @@ const Performances = () => {
   return (
     <>
       <table>
+        <colgroup>
+          <col className="one" span="1" />
+          <col className="three" span="1" />
+          <col className="two" span="1" />
+          <col className="two" span="1" />
+        </colgroup>
         <caption>Performances Schedule</caption>
         <thead>
           <tr>
@@ -17,16 +23,22 @@ const Performances = () => {
         <tbody>
           {performances.map(performance => (
             <tr key={performance.time}>
-              <td data-label="Time">{performance.time}</td>
-              <td data-label="Performer">
+              <td className="samesize" data-label="Time">
+                {performance.time}
+              </td>
+              <td className="fitwidth" data-label="Performer">
                 {performance.country === "" || performance.genre === "" ? (
                   <b>{performance.performer}</b>
                 ) : (
                   performance.performer
                 )}
               </td>
-              <td data-label="Country">{performance.country}</td>
-              <td data-label="Genre">{performance.genre}</td>
+              <td className="samesize" data-label="Country">
+                {performance.country}
+              </td>
+              <td className="samesize" data-label="Genre">
+                {performance.genre}
+              </td>
             </tr>
           ))}
         </tbody>

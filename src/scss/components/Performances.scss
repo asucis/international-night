@@ -5,6 +5,20 @@ table {
   padding: 0;
   width: 100%;
   table-layout: fixed;
+
+  & > colgroup > col {
+    &.one {
+      width: 15%;
+    }
+
+    &.two {
+      width: 20%;
+    }
+
+    &.three {
+      width: 45%;
+    }
+  }
 }
 
 table caption {
@@ -24,6 +38,15 @@ table td {
   text-align: left;
 }
 
+table td.fitwidth {
+  width: 1px;
+  white-space: nowrap;
+}
+
+table td.samesize {
+  width: 30px;
+}
+
 table th {
   font-size: 0.85em;
   letter-spacing: 0.1em;
@@ -33,6 +56,15 @@ table th {
 @media screen and (max-width: 768px) {
   table {
     border: 0;
+
+    & > colgroup > col {
+      &.one,
+      &.two,
+      &.three {
+        width: 100%;
+        display: table-cell;
+      }
+    }
   }
 
   table caption {
@@ -62,6 +94,12 @@ table th {
     font-size: 0.8em;
     text-align: right;
     height: 0.8rem;
+
+    &.fitwidth,
+    &.samesize {
+      width: auto;
+      white-space: none;
+    }
   }
 
   table td::before {
