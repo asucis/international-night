@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "./Image";
-import { eventMapImage } from "../../data/eventMap.json";
-import { performances } from "../../data/performances.json";
+import { eventMapImage, booths } from "../../data/eventMap.json";
 
 const EventMap = () => (
   <>
@@ -12,7 +11,7 @@ const EventMap = () => (
         <table>
           <colgroup>
             <col className="one" span="1" />
-            <col className="three" span="1" />
+            <col className="two" span="1" />
           </colgroup>
           <thead>
             <tr>
@@ -21,18 +20,16 @@ const EventMap = () => (
             </tr>
           </thead>
           <tbody>
-            {performances
-              .slice(0, Math.ceil(performances.length / 2))
-              .map(performance => (
-                <tr key={performance.time}>
-                  <td className="samesize" data-label="Booth">
-                    {performance.time}
-                  </td>
-                  <td className="samesize" data-label="Organization">
-                    <b>{performance.performer}</b>
-                  </td>
-                </tr>
-              ))}
+            {booths.slice(0, Math.ceil(booths.length / 2)).map(booth => (
+              <tr key={booth.boothNumber}>
+                <td className="samesize" data-label="Booth">
+                  {booth.boothNumber}
+                </td>
+                <td className="samesize" data-label="Organization">
+                  {booth.organization}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -40,7 +37,7 @@ const EventMap = () => (
         <table>
           <colgroup>
             <col className="one" span="1" />
-            <col className="three" span="1" />
+            <col className="two" span="1" />
           </colgroup>
           <thead>
             <tr>
@@ -49,15 +46,15 @@ const EventMap = () => (
             </tr>
           </thead>
           <tbody>
-            {performances
-              .slice(Math.ceil(performances.length / 2), performances.length)
-              .map(performance => (
-                <tr key={performance.time}>
+            {booths
+              .slice(Math.ceil(booths.length / 2), booths.length)
+              .map(booth => (
+                <tr key={booth.boothNumber}>
                   <td className="samesize" data-label="Booth">
-                    {performance.time}
+                    {booth.boothNumber}
                   </td>
                   <td className="samesize" data-label="Organization">
-                    <b>{performance.performer}</b>
+                    {booth.organization}
                   </td>
                 </tr>
               ))}

@@ -3,7 +3,21 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 18px;
 
+  table > colgroup > col {
+    &.one {
+      width: 20%;
+    }
+
+    &.two {
+      width: 80%;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+
+    table td.samesize {
+      height: auto;
+    }
   }
 }

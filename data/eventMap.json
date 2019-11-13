@@ -1,3 +1,309 @@
 {
-  "eventMapImage": "/images/event-map.png"
+  "eventMapImage": "/images/event-map.png",
+  "booths": [
+    {
+      "boothNumber": "A-1",
+      "organization": "Tea Swirl "
+    },
+    {
+      "boothNumber": "B-1",
+      "organization": "Unified Society of South Asians "
+    },
+    {
+      "boothNumber": "C-1",
+      "organization": "Active Minds"
+    },
+    {
+      "boothNumber": "D-1",
+      "organization": "Make Your Impact Club"
+    },
+    {
+      "boothNumber": "E-1",
+      "organization": "Desi Tunes"
+    },
+    {
+      "boothNumber": "F-1",
+      "organization": "Study Abroad Office"
+    },
+    {
+      "boothNumber": "G-1",
+      "organization": "Muslim Student's Association"
+    },
+    {
+      "boothNumber": "H-1",
+      "organization": "Lebanese Student Association"
+    },
+    {
+      "boothNumber": "I-1",
+      "organization": "Emirati Student Association  "
+    },
+    {
+      "boothNumber": "J-1",
+      "organization": "CSSA"
+    },
+    {
+      "boothNumber": "A-2",
+      "organization": "TISA"
+    },
+    {
+      "boothNumber": "B-2",
+      "organization": "Hawaii and Pacific Islanders Club at ASU"
+    },
+    {
+      "boothNumber": "C-2",
+      "organization": "Vietnamese Student Union"
+    },
+    {
+      "boothNumber": "D-2",
+      "organization": "Peace Corps"
+    },
+    {
+      "boothNumber": "E-2",
+      "organization": "Tea Moment "
+    },
+    {
+      "boothNumber": "F-2",
+      "organization": "Changemaker"
+    },
+    {
+      "boothNumber": "G-2",
+      "organization": "Omani Students Association"
+    },
+    {
+      "boothNumber": "H-2",
+      "organization": "Arabic Program at the School of International Letters and Cultures "
+    },
+    {
+      "boothNumber": "I-2",
+      "organization": "Arabic Language and Culture Club"
+    },
+    {
+      "boothNumber": "J-2",
+      "organization": "Bridge Club "
+    },
+    {
+      "boothNumber": "A-3",
+      "organization": "Palestinian Cultural Club"
+    },
+    {
+      "boothNumber": "B-3",
+      "organization": "SADIK"
+    },
+    {
+      "boothNumber": "C-3",
+      "organization": " ESANA"
+    },
+    {
+      "boothNumber": "D-3",
+      "organization": "Singapore Student Association"
+    },
+    {
+      "boothNumber": "E-3",
+      "organization": "Original Cuisine (6-8 pm) / NanZhou (8-10pm) "
+    },
+    {
+      "boothNumber": "F-3",
+      "organization": "Women in STEM"
+    },
+    {
+      "boothNumber": "G-3",
+      "organization": "Society of Hispanic Professional Engineers"
+    },
+    {
+      "boothNumber": "H-3",
+      "organization": "Saudi Donors"
+    },
+    {
+      "boothNumber": "I-3, I-4, J-3, J-4",
+      "organization": "Saudi"
+    },
+    {
+      "boothNumber": "A-4",
+      "organization": "Dabke United"
+    },
+    {
+      "boothNumber": "B-4",
+      "organization": "Sudanese American organization"
+    },
+    {
+      "boothNumber": "C-4",
+      "organization": "Assyrian Student Association"
+    },
+    {
+      "boothNumber": "D-4",
+      "organization": "Undocumented Students for Education Equity"
+    },
+    {
+      "boothNumber": "E-4",
+      "organization": "Neko Grocery (Foodiecat)"
+    },
+    {
+      "boothNumber": "F-4",
+      "organization": "Women’s Coalition "
+    },
+    {
+      "boothNumber": "G-4",
+      "organization": "El Concilio"
+    },
+    {
+      "boothNumber": "H-4",
+      "organization": "GPSA"
+    },
+    {
+      "boothNumber": "A-5",
+      "organization": "Sun Devil Breaking Club"
+    },
+    {
+      "boothNumber": "B-5",
+      "organization": "Axe capoeira @asu"
+    },
+    {
+      "boothNumber": "C-5",
+      "organization": "Herberger Institute Student Council"
+    },
+    {
+      "boothNumber": "D-5",
+      "organization": "Iranian Students Association"
+    },
+    {
+      "boothNumber": "E-5",
+      "organization": "Shaanxi Garden (6-8 pm) / James Kitchen (8-10pm) "
+    },
+    {
+      "boothNumber": "F-5",
+      "organization": "AAPASC"
+    },
+    {
+      "boothNumber": "G-5",
+      "organization": "Rainbow Coalition"
+    },
+    {
+      "boothNumber": "H-5",
+      "organization": "USG-T"
+    },
+    {
+      "boothNumber": "I-5",
+      "organization": "Mochi Fresh "
+    },
+    {
+      "boothNumber": "J-5",
+      "organization": "Fun Fun "
+    },
+    {
+      "boothNumber": "A-6",
+      "organization": "AZNA Dance"
+    },
+    {
+      "boothNumber": "B-6",
+      "organization": "Afghan Student Association "
+    },
+    {
+      "boothNumber": "C-6",
+      "organization": "Philippine American Student Association"
+    },
+    {
+      "boothNumber": "D-6",
+      "organization": "Phi Alpha National Honor Society for Social Workers, Theta Tau Chapter"
+    },
+    {
+      "boothNumber": "E-6",
+      "organization": "Dayuan Zi (6-8pm) / Chili Rush (8-10pm) "
+    },
+    {
+      "boothNumber": "F-6",
+      "organization": "ABLA"
+    },
+    {
+      "boothNumber": "G-6",
+      "organization": "Malaysian Students' Association"
+    },
+    {
+      "boothNumber": "H-6",
+      "organization": "Nepalese Students Association"
+    },
+    {
+      "boothNumber": "I-6",
+      "organization": "BSA"
+    },
+    {
+      "boothNumber": "J-6",
+      "organization": "ISA"
+    },
+    {
+      "boothNumber": "A-7",
+      "organization": "Campus Student Sustainability Initiatives"
+    },
+    {
+      "boothNumber": "B-7",
+      "organization": "City of Mesa Volunteer Office "
+    },
+    {
+      "boothNumber": "C-7",
+      "organization": "Global Council of Diplomats"
+    },
+    {
+      "boothNumber": "D-7",
+      "organization": "Theta Delta Chi "
+    },
+    {
+      "boothNumber": "E-7",
+      "organization": "Japanese Student Association "
+    },
+    {
+      "boothNumber": "F-7",
+      "organization": "W. P. Carey Global Education Center"
+    },
+    {
+      "boothNumber": "G-7",
+      "organization": "ASU Prep Digital "
+    },
+    {
+      "boothNumber": "H-7",
+      "organization": "PERMIAS"
+    },
+    {
+      "boothNumber": "I-7",
+      "organization": "Car repairer "
+    },
+    {
+      "boothNumber": "J-7",
+      "organization": "Southeast Asian American Student Association"
+    },
+    {
+      "boothNumber": "A-8",
+      "organization": "Zero Waste Department"
+    },
+    {
+      "boothNumber": "B-8",
+      "organization": "Bridges International Graduate Students"
+    },
+    {
+      "boothNumber": "C-8",
+      "organization": "International Club of Undergraduates"
+    },
+    {
+      "boothNumber": "D-8",
+      "organization": "ASU Office of Government & Community Engagement"
+    },
+    {
+      "boothNumber": "E-8",
+      "organization": "Falun Dafa Club at ASU"
+    },
+    {
+      "boothNumber": "F-8",
+      "organization": "ASU Wellness"
+    },
+    {
+      "boothNumber": "G-8",
+      "organization": "Devils in the Bedroom"
+    },
+    {
+      "boothNumber": "H-8, I-8",
+      "organization": "Sponsors - Complex"
+    },
+    {
+      "boothNumber": "J-8",
+      "organization": "Ascend"
+    }
+  ]
 }
