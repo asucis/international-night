@@ -2,7 +2,7 @@
   "performances": [
     {
       "time": "6:30 - 6:33 PM",
-      "performer": "Introduction by MCs",
+      "performer": "Introduction",
       "country": "",
       "genre": ""
     },
@@ -50,7 +50,7 @@
     },
     {
       "time": "7:33 - 7:38 PM",
-      "performer": "Interlude by MCs",
+      "performer": "Interlude 1",
       "country": "",
       "genre": ""
     },
@@ -98,7 +98,7 @@
     },
     {
       "time": "8:22 - 8:27 PM",
-      "performer": "Interlude by MCs",
+      "performer": "Interlude 2",
       "country": "",
       "genre": ""
     },
@@ -146,7 +146,7 @@
     },
     {
       "time": "9:10 - 9:15 PM",
-      "performer": "Interlude by MCs",
+      "performer": "Interlude 3",
       "country": "",
       "genre": ""
     },
@@ -188,7 +188,7 @@
     },
     {
       "time": "10:07 - 10:10 PM",
-      "performer": "Closing by MCs",
+      "performer": "Closing words",
       "country": "",
       "genre": ""
     }
