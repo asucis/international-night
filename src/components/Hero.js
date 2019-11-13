@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import Countdown from "./Countdown";
 import Image from "./Image";
-import { tagline, callToAction } from "../../data/information.json";
+import { logo, tagline, callToAction } from "../../data/information.json";
 
 const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-logo">
-        <Image fileName="in-logo-2019.png" />
+        <Image fileName={logo.split("/").pop()} />
       </div>
       <h1>{tagline}</h1>
       <h2>
