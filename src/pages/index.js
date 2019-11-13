@@ -156,8 +156,8 @@ class IndexPage extends Component {
                 </div>
               )} */}
             </div>
-            <Directory />
             <Performances />
+            <Directory />
           </div>
         </section>
         <Footer />
