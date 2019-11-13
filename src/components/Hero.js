@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-logo">
-        <Image />
+        <Image fileName="in-logo-2019.png" />
       </div>
       <h1>{tagline}</h1>
       <h2>

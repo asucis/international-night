@@ -9,12 +9,13 @@ import {
   faTicketAlt,
   faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import InstagramEmbed from "react-instagram-embed";
+// import InstagramEmbed from "react-instagram-embed";
 import Hero from "../components/Hero";
 import Livestream from "../components/Livestream";
 import Footer from "../components/Footer";
 import SEO from "../components/seo";
 import Performances from "../components/Performances";
+import Directory from "../components/EventMap";
 import { eventTimestamp } from "../../data/information.json";
 import { title, hashtags, description } from "../../data/introduction.json";
 
@@ -124,7 +125,7 @@ class IndexPage extends Component {
                   </a>
                 </div>
               </div>
-              {isEventToday ? (
+              {/* {isEventToday ? (
                 ""
               ) : (
                 <div className="instagram-post-container">
@@ -153,8 +154,9 @@ class IndexPage extends Component {
                     onFailure={() => {}}
                   />
                 </div>
-              )}
+              )} */}
             </div>
+            <Directory />
             <Performances />
           </div>
         </section>

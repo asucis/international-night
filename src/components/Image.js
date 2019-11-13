@@ -2,14 +2,14 @@ import React from "react";
 import Img from "gatsby-image";
 import getOptimizedImage from "../hooks/get-optimized-image";
 
-const Image = () => {
+const Image = ({ fileName }) => {
   const images = getOptimizedImage();
 
-  const placeholder = images.edges.find(
-    image => image.node.relativePath === "in-logo-2019.png"
+  const optimizedImage = images.edges.find(
+    image => image.node.relativePath === fileName
   );
 
-  return <Img fluid={placeholder.node.childImageSharp.fluid} />;
+  return <Img fluid={optimizedImage.node.childImageSharp.fluid} />;
 };
 
 export default Image;

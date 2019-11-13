@@ -44,10 +44,11 @@ collections:
               - { label: "Icon", name: "icon" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Link", name: "link" }
-      - label: "Directory"
-        name: "directory"
-        file: "data/directory.json"
+      - label: "Event Map"
+        name: "eventMap"
+        file: "data/eventMap.json"
         fields:
+          - { label: "Map image", name: "eventMapImage", widget: image }
           - label: "Booth"
             name: "booth"
             widget: "list"
