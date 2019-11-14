@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "./Image";
 import {
+  logo,
   tagline,
   livestreamUrl,
   callToAction,
@@ -14,7 +15,7 @@ const Livestream = () => {
     <section className="livestream">
       <div className="livestream-container">
         <div className="hero-logo">
-          <Image />
+          <Image fileName={logo.split("/").pop()} />
         </div>
         <h1>{tagline}</h1>
         <Iframe
