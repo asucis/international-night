@@ -48,6 +48,12 @@ collections:
         name: "eventMap"
         file: "data/eventMap.json"
         fields:
+          - {
+              label: "Hide section ?",
+              name: "isEventMapHidden",
+              widget: "boolean",
+              default: false,
+            }
           - { label: "Map image", name: "eventMapImage", widget: image }
           - label: "Booths"
             name: "booths"
@@ -71,6 +77,12 @@ collections:
         name: "performances"
         file: "data/performances.json"
         fields:
+          - {
+              label: "Hide section ?",
+              name: "isPerformancesHidden",
+              widget: "boolean",
+              default: false,
+            }
           - label: "Performances"
             label_singular: "performance"
             name: "performances"

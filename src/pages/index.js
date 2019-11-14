@@ -18,6 +18,8 @@ import Performances from "../components/Performances";
 import Directory from "../components/EventMap";
 import { eventTimestamp } from "../../data/information.json";
 import { title, hashtags, description } from "../../data/introduction.json";
+import { isPerformancesHidden } from "../../data/performances.json";
+import { isEventMapHidden } from "../../data/eventMap.json";
 
 import "../scss/App.scss";
 
@@ -156,8 +158,8 @@ class IndexPage extends Component {
                 </div>
               )} */}
             </div>
-            <Performances />
-            <Directory />
+            {!isPerformancesHidden && <Performances />}
+            {!isEventMapHidden && <Directory />}
           </div>
         </section>
         <Footer />
