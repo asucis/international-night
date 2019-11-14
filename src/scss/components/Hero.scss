@@ -103,4 +103,8 @@ section.hero {
       font-size: 0.8rem;
     }
   }
+
+  @media (min-width: 660px) and (max-height: 768px) {
+    height: auto;
+  }
 }
