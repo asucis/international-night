@@ -6,49 +6,22 @@ const EventMap = () => (
   <>
     <h1 className="section-header">Event Map</h1>
     <Image fileName={eventMapImage.split("/").pop()} />
-    <div className="event-map-booths-container">
-      <div className="left">
-        <table>
-          <colgroup>
-            <col className="one" span="1" />
-            <col className="two" span="1" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Booth</th>
-              <th scope="col">Organization</th>
-            </tr>
-          </thead>
-          <tbody>
-            {booths.slice(0, Math.ceil(booths.length / 2)).map(booth => (
-              <tr key={booth.boothNumber}>
-                <td className="samesize" data-label="Booth">
-                  {booth.boothNumber}
-                </td>
-                <td className="samesize" data-label="Organization">
-                  {booth.organization}
-                </td>
+    {booths.length !== 0 && (
+      <div className="event-map-booths-container">
+        <div className="left">
+          <table>
+            <colgroup>
+              <col className="one" span="1" />
+              <col className="two" span="1" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Booth</th>
+                <th scope="col">Organization</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <div className="right">
-        <table>
-          <colgroup>
-            <col className="one" span="1" />
-            <col className="two" span="1" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Booth</th>
-              <th scope="col">Organization</th>
-            </tr>
-          </thead>
-          <tbody>
-            {booths
-              .slice(Math.ceil(booths.length / 2), booths.length)
-              .map(booth => (
+            </thead>
+            <tbody>
+              {booths.slice(0, Math.ceil(booths.length / 2)).map(booth => (
                 <tr key={booth.boothNumber}>
                   <td className="samesize" data-label="Booth">
                     {booth.boothNumber}
@@ -58,10 +31,39 @@ const EventMap = () => (
                   </td>
                 </tr>
               ))}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
+        <div className="right">
+          <table>
+            <colgroup>
+              <col className="one" span="1" />
+              <col className="two" span="1" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Booth</th>
+                <th scope="col">Organization</th>
+              </tr>
+            </thead>
+            <tbody>
+              {booths
+                .slice(Math.ceil(booths.length / 2), booths.length)
+                .map(booth => (
+                  <tr key={booth.boothNumber}>
+                    <td className="samesize" data-label="Booth">
+                      {booth.boothNumber}
+                    </td>
+                    <td className="samesize" data-label="Organization">
+                      {booth.organization}
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    )}
   </>
 );
 
