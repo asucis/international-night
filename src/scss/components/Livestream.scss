@@ -38,6 +38,7 @@ section.livestream {
     // Styles for phone view
     @media (max-width: 435px) {
       grid-template-rows: 7rem 5rem 2fr 3rem 1fr;
+      height: 100vh;
 
       .hero-logo {
         .gatsby-image-wrapper {
