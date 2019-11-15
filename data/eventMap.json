@@ -1,5 +1,5 @@
 {
-  "isEventMapHidden": true,
+  "isEventMapHidden": false,
   "eventMapImage": "/images/event-map.png",
   "booths": [
     {
