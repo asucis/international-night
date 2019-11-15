@@ -11,23 +11,23 @@ const EventMap = () => (
         <div className="left">
           <table>
             <colgroup>
-              <col className="one" span="1" />
               <col className="two" span="1" />
+              <col className="one" span="1" />
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">Booth</th>
                 <th scope="col">Organization</th>
+                <th scope="col">Booth</th>
               </tr>
             </thead>
             <tbody>
               {booths.slice(0, Math.ceil(booths.length / 2)).map(booth => (
                 <tr key={booth.boothNumber}>
-                  <td className="samesize" data-label="Booth">
-                    {booth.boothNumber}
-                  </td>
                   <td className="samesize" data-label="Organization">
                     {booth.organization}
+                  </td>
+                  <td className="samesize" data-label="Booth">
+                    {booth.boothNumber}
                   </td>
                 </tr>
               ))}
@@ -37,13 +37,13 @@ const EventMap = () => (
         <div className="right">
           <table>
             <colgroup>
-              <col className="one" span="1" />
               <col className="two" span="1" />
+              <col className="one" span="1" />
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">Booth</th>
                 <th scope="col">Organization</th>
+                <th scope="col">Booth</th>
               </tr>
             </thead>
             <tbody>
@@ -51,11 +51,11 @@ const EventMap = () => (
                 .slice(Math.ceil(booths.length / 2), booths.length)
                 .map(booth => (
                   <tr key={booth.boothNumber}>
-                    <td className="samesize" data-label="Booth">
-                      {booth.boothNumber}
-                    </td>
                     <td className="samesize" data-label="Organization">
                       {booth.organization}
+                    </td>
+                    <td className="samesize" data-label="Booth">
+                      {booth.boothNumber}
                     </td>
                   </tr>
                 ))}
