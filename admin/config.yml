@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - label: "Sections"
+    name: "sections"
+    extension: "json"
+    format: "json"
+    files:
+      - label: "Event Information"
+        name: "information"
+        file: "data/information.json"
+        fields:
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Event Date", name: "eventTimestamp", widget: "datetime" }
+          - { label: "Livestream URL", name: "livestreamUrl", widget: "string" }
+          - label: "Call to action"
+            name: "callToAction"
+            widget: "list"
+            fields:
+              - { label: "Button text", name: "text" }
+              - { label: "Button link", name: "link" }
+      - label: "Introduction"
+        name: "introduction"
+        file: "data/introduction.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Hashtags"
+            label_singular: "hashtag"
+            name: "hashtags"
+            widget: "list"
+            fields:
+              - { label: "Hashtag", name: "hashtag" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Event Details"
+            label_singular: "event detail"
+            name: "eventDetails"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link", name: "link" }
+      - label: "Event Map"
+        name: "eventMap"
+        file: "data/eventMap.json"
+        fields:
+          - {
+              label: "Hide section ?",
+              name: "isEventMapHidden",
+              widget: "boolean",
+              default: false,
+            }
+          - { label: "Map image", name: "eventMapImage", widget: image }
+          - label: "Booths"
+            name: "booths"
+            widget: "list"
+            fields:
+              - { label: "Booth number", name: "boothNumber" }
+              - { label: "Organization name", name: "organization" }
+      - label: "Food"
+        name: "food"
+        file: "data/food.json"
+        fields:
+          - label: "Food Items"
+            label_singular: "food item"
+            name: "food"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name" }
+              - { label: "Type", name: "type" }
+              - { label: "Picture", name: "picture", widget: image }
+      - label: "Performances"
+        name: "performances"
+        file: "data/performances.json"
+        fields:
+          - {
+              label: "Hide section ?",
+              name: "isPerformancesHidden",
+              widget: "boolean",
+              default: false,
+            }
+          - label: "Performances"
+            label_singular: "performance"
+            name: "performances"
+            widget: "list"
+            fields:
+              - { label: "Time", name: "time" }
+              - { label: "Genre", name: "performer" }
+              - { label: "Country", name: "country", required: false }
+              - { label: "Genre", name: "genre", required: false }
