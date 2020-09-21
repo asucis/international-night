@@ -6,6 +6,7 @@ module.exports = {
     url: "https://internationalnight.asucis.com",
     author: `@dickwyn`,
   },
+  pathPrefix: "/international-night-2019",
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-eslint`,
