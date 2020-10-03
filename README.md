@@ -1,18 +1,18 @@
 ![asucis logo](https://raw.githubusercontent.com/asucis/international-night/master/.github/asucis-logo.png)
 
-# international-night
+# International Night 2019
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ed792f1-3e7f-4723-b11a-3cf8e763aa68/deploy-status)](https://app.netlify.com/sites/admiring-meitner-b5340f/deploys)
 
-Official website for International Night, the flagship event for Coalition of International Students at Arizona State University.
+Official website for International Night 2019, the flagship event for Coalition of International Students at Arizona State University.
 
 ## Development
 
 ℹ️ yarn, gatsby-cli is required to run the project
 
 ```sh
-$ git clone https://github.com/asucis/international-night.git
-$ cd international-night
+$ git clone https://github.com/asucis/international-night-2019.git
+$ cd international-night-2019
 $ yarn
 $ gatsby develop
 ```
